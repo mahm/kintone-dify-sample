@@ -1,0 +1,21 @@
+kintone:
+  base_url: "https://{subdomain}.cybozu.com"
+
+pairs:
+  - name: "inquiry-processing"
+    # kintoneのアプリID
+    kintone_app_id: 123
+    # kintoneのAPIトークン
+    kintone_token: "xxxxx"
+    # DifyのAPIキー
+    dify_api_key: "DIFY_API_KEY_HERE"
+
+    # kintoneからDifyへのマッピング
+    kintone_to_dify:
+      inquiry_email: "Email"
+      inquiry_text: "InquiryContent"
+
+    # Difyからkintoneへのマッピング
+    dify_to_kintone:
+      customer_id: "customer_id"
+      reply_draft: "reply_draft"
